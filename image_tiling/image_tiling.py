@@ -44,10 +44,11 @@ def image_tiling():
                 x2 = int((k + 1) * x_ + extra_frame)
                 x_name = k + 1
                 # Regional image cropping
-                image.crop((x1, y1, x2, y2)).save(dest_path + file_name + "_(" + str(x_name) + "," + str(y_name) + ").jpg")
+                image.crop((x1, y1, x2, y2)).save(dest_path + file_name + "_" + str(x_name)
+                                                  + str(y_name) + ".jpg")
                 # Create a regional txt file
-                with open(dest_path + file_name + "_(" + str(x_name) + "," +
-                          str(y_name) + ").txt", "w"):
+                with open(dest_path + file_name + "_" + str(x_name) +
+                          str(y_name) + ".txt", "w"):
                     pass
 
         # Read coordinates from txt file
@@ -76,8 +77,7 @@ def image_tiling():
             x = (x_region_coord - ((x_region - 1) * x_)) / (x_ + extra_frame)
             y = (y_region_coord - ((y_region - 1) * y_)) / (y_ + extra_frame)
 
-            with open(dest_path + file_name + "_(" + str(x_name) + "," +
-                          str(y_name) + ").txt", "a") as file:
+            with open(dest_path + file_name + "_" + str(x_region) + str(y_region) + ".txt", "a") as file:
                 print(str(cls), str(x), str(y), str(w), str(h), file=file)
 
 
