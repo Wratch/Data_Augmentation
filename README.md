@@ -4,7 +4,7 @@
 
 ## How to use on the command line : 
 
-python image_tiling.py --input input/ --destination result/ --divide_x 4 --divide_y 4 --extra_frame 30 --extension jpg
+python image_tiling.py --input input/ --destination result/ --divide_x 2 --divide_y 2 --extra_frame 30 --extension jpg
 
 --input : Enter the location of the images and labels(txt files)
 
