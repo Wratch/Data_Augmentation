@@ -17,3 +17,6 @@ python image_tiling.py --input input/ --destination result/ --divide_x 2 --divid
 --extra_frame : Enter extra frame for overlap image 
 
 --extension : Enter image extension (jpg,png)
+
+Examples Photo : 
+
