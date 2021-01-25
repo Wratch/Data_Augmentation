@@ -63,8 +63,8 @@ def image_tiling():
             cls = int(array[0])
             x = float(array[1])
             y = float(array[2])
-            w = float(array[3]) * divide_x
-            h = float(array[4]) * divide_y
+            w = float(array[3]) * (x_main / (x_ + extra_frame))
+            h = float(array[4]) * (y_main / (y_ + extra_frame))
             i += 1
 
             # Round the number upper and find region
