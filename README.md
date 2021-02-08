@@ -18,6 +18,14 @@
 
 **--extension** : Enter image extension (jpg,png)
 
+## Txt files must be in yolo format:
+
+```
+1 0.716797 0.395833 0.216406 0.147222
+0 0.687109 0.379167 0.255469 0.158333
+1 0.420312 0.395833 0.140625 0.166667
+```
+
 ## Original photo:
 
 <img src="Assets/original.png" width="811" height="608" />
