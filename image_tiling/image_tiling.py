@@ -90,4 +90,7 @@ if __name__ == '__main__':
     extra_frame = args.extra_frame
     extension = args.extension
 
+    if not os.path.exists(dest_path):
+        os.mkdir(dest_path)
+
     image_tiling()
